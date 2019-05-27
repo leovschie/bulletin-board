@@ -1,0 +1,25 @@
+{
+  "name": "bulletin-board",
+  "version": "1.0.0",
+  "description": "Assignment Bulletin Board",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leovschie/bulletin-board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leovschie/bulletin-board/issues"
+  },
+  "homepage": "https://github.com/leovschie/bulletin-board#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "pg": "^7.11.0"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Bulletin Board</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/board">Bulletin Board</a>
+            </li>
+            <li>
+                <a href="/">Create A Post</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <h1>Bulletin Board</h1>
+    <ul>
+        <!-- the equal sign is what is shown on the page. without an equal sign it won't show! -->
+
+        <%returnMessages.forEach(message => {%>
+        <li>
+            <div class="underscore"><%=message.title%></div> <%=message.body%>
+        </li>
+        <br>
+
+        <%})%>
+    </ul>
+
+</body>
+
+</html>
