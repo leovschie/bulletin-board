@@ -1,40 +1,111 @@
-/* .textarea {
-    width: 50%;
-    height: 100%;
-} */
-
-/* body {
-    display: flex;
-    color: blue;
-    justify-content: center;
-    align-content: center;
-
-} */
-/* nav {
-    display: inline-flex;
-    align-content: center;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-h1 {} */
-
 body {
-    display: flex;
-    color: blue;
-    justify-content: center;
-    align-content: center;
-    flex-flow: column wrap;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-around;
+  font-family: "Noto Sans TC", sans-serif;
+  background: transparent;
+  border-radius: 10%;
 }
 
-.underscore {
-    font-weight: bold;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
 }
 
-ul {
-    list-style: none;
+nav a {
+  text-decoration: none;
+  color: #448a51;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: transparent;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1.5%;
 }
 
-li {
-    border: 1px solid pink;
+nav a:hover {
+  background: #f7df2a;
+  color: white;
+  border: 0px solid;
+  border-radius: 10%;
+}
+
+input,
+textarea {
+  text-align: center;
+  width: 100%;
+  background: #448a51;
+  color: #f7df2a;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: 180px;
+}
+
+::placeholder {
+  color: #f7df2a;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  opacity: 1;
+}
+
+.button {
+  color: #f7df2a;
+  font-weight: bold;
+}
+
+header {
+  width: 70%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url(./banana.png) no-repeat;
+  background-position: center;
+  background-size: 300px;
+}
+
+h1 {
+  text-align: center;
+  background: transparent;
+  color: #448a51;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.resultbox {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.resultsleft {
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(251, 235, 72, 0.5);
+}
+
+.resultsright {
+  display: flex;
+  border-bottom: 2px solid #448a51;
+  text-align: center;
 }
